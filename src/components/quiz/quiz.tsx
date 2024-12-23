@@ -29,7 +29,7 @@ export default function Quiz() {
     let positiveAnswers = 0;
     const totalQuestions = questions.length;
     
-    Object.entries(answers).forEach(([index, answer]) => {
+    Object.entries(answers).forEach(([, answer]) => {
       if (answer === true) positiveAnswers++;
     });
 
